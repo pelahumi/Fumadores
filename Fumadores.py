@@ -23,4 +23,21 @@ class Fumador(threading.Thread):
                     print("Fumador con ",self.ingrediente, "cogió el resto y está fumando.")
                     time.sleep(2.5)
                     puede_fumar.notify()
+
+#Clase agente
+class Agente(threading.Thread):
+    def __init__(self):
+        super().__init__(self)
+    
+    def run(self):
+        while True:
+            with disponible:
+                ingrediente1, ingrediente2 = random.sample(INGREDIENTES, 2)
+                print("El agente colocó ",ingrediente1, "y", ingrediente2, "en la mesa.")
+                with puede_fumar:
+                    puede_fumar.notify_all()
+                time.sleep(1)
+                with puede_fumar:
+                    puede_fumar.wait()
+                
             
