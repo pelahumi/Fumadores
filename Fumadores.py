@@ -4,3 +4,7 @@ import time
 
 #Creamos una lista con los ingredientes
 INGREDIENTES = ["papel", "tabaco", "filtros", "green", "cerillas"]
+
+# Condiciones
+puede_fumar = threading.Condition()
+disponible = threading.Condition()
