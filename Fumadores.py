@@ -12,7 +12,7 @@ disponible = threading.Condition()
 #Clase fumador
 class Fumador(threading.Thread):
     def __init__(self, ingrediente):
-        super().__init__(self)
+        super().__init__()
         self.ingrediente = ingrediente
     
     def run(self):
@@ -27,7 +27,7 @@ class Fumador(threading.Thread):
 #Clase agente
 class Agente(threading.Thread):
     def __init__(self):
-        super().__init__(self)
+        super().__init__()
     
     def run(self):
         while True:
