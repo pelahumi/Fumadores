@@ -35,7 +35,6 @@ A continuación, creamos las condiciones para bloquear y desbloquear el acceso a
 ```
 puede_fumar = threading.Condition()
 disponible = threading.Condition()
-
 ```
 
 Creamos la clase ```Fumador()```, al que le añadimos un atributo, su ingrediente:
@@ -66,6 +65,7 @@ Creamos la clase ```Agente()```:
 class Agente(threading.Thread):
     def __init__(self):
         super().__init__()
+```
 
 Le añadimos el método ```run()```, en el que el agente deja 4 de los 5 ingredientes en la mesa, y el que tiene el ingrediente que falta puede fumar:
 
