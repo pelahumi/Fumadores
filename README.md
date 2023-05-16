@@ -100,6 +100,7 @@ def lanzador():
 ## Ouput<a name="3"></a>
 El ouput del código es el siguiente:
 
-<img width="393" alt="Captura de pantalla 2023-05-15 a las 23 47 08" src="https://github.com/pelahumi/Fumadores/assets/91721764/6c788956-6094-47dc-8e08-84e6faf5f2b3">
+<img width="475" alt="Captura de pantalla 2023-05-16 a las 11 24 01" src="https://github.com/pelahumi/Fumadores/assets/91721764/f6e7490d-863c-42f6-ac01-e4ea3bb37575">
+
 
 
