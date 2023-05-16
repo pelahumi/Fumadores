@@ -82,7 +82,7 @@ Le añadimos el método ```run()```, en el que el agente deja 4 de los 5 ingredi
                     puede_fumar.wait()
 ```
 
-Por último creamos otro archivo en el que crearemos una función para ejecutar todo el código. La función ´´´lanzador()``` crea tantos fumadores como ingredientes y los guarda en una lista. Se crea un objeto agente. Y ejecuta todos los hilos con la función ```.start()```:
+Por último creamos otro archivo en el que crearemos una función para ejecutar todo el código. La función ```lanzador()``` crea tantos fumadores como ingredientes y los guarda en una lista. Se crea un objeto agente. Y ejecuta todos los hilos con la función ```.start()```:
 
 ```
 def lanzador():
